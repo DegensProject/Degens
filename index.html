@@ -1,0 +1,415 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Degens Club</title>
+  <style>
+    /* Reset default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Set body background color and font family */
+    body {
+      background-color: #f8f8f8;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      position: relative;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: #333;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    /* Hero section styles */
+    #hero {
+      background-image: url(sample.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 400px;
+      opacity: 0.8;
+      position: relative;
+    }
+
+    .hero-image {
+      height: 100%;
+      width: 100%;
+    }
+
+    .centered-square-image {
+      background-image: url(sample.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 200px;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+    }
+
+    /* Section one styles */
+    #section-one {
+      background-color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    #section-one h3 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+
+    #section-one h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+
+    .two-columns {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .left-column, .right-column {
+      flex-basis: 50%;
+    }
+
+    .left-column {
+      padding-right: 10px;
+      text-align: right;
+    }
+
+    .right-column {
+      padding-left: 10px;
+      text-align: left;
+    }
+
+    .centered-rectangular-image {
+      background-image: url(sample.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 300px;
+      margin: 0 auto;
+      width: 400px;
+    }
+
+    .right-column h3 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .right-column p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      background-color: #fff;
+           border: 2px solid #333;
+      color: #333;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .button:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    /* Section two styles */
+    #section-two {
+      background-color: #f8f8f8;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    #section-two h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+
+    /* Section three styles */
+    #section-three {
+      background-color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    #section-three h3 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+
+    #section-three p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    /* Section four styles */
+    #section-four {
+      background-color: #f8f8f8;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    #section-four h3 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+
+    /* Section five styles */
+    #section-five {
+      background-color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    #section-five h3 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+	  h4 {
+      font-size: 18px;
+      margin-bottom: 40px;
+	  padding-left: 20%;
+	  padding-right: 20%;
+      text-transform: uppercase;
+    }
+	  h5 {
+      font-size: 16px;
+      margin-bottom: 40px;
+	  padding-right: 20%;
+    }
+	h6 {
+      font-size: 16px;
+	  margin-top: 40px;
+      margin-bottom: 40px;
+	  padding-left: 20%;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .centered-copyright {
+      margin: 0 auto;
+      max-width: 960px;
+    }
+
+    .centered-copyright p {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <h1>Degens Club</h1>
+    <!-- Navigation bar -->
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">CHART</a></li>
+        <li><a href="#">BUY DEGENS</a></li>
+        <li><a href="#">TWITTER</a></li>
+        <li><a href="#">TELEGRAM</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero section -->
+  <section id="hero">
+    <div class="hero-image" style="background-image: url(heroimage.jpg);"></div>
+  </section>
+
+  <!-- Section one -->
+  <section id="section-one">
+    <h3>RELEASE THE INNER DEGEN</h3>
+    <h4>Welcome to DEGENS – the coin for the people. If you're reading this, chances are you're a degen. But being a degen isn't a bad thing – it's a badge of honor that unites us all. 
+      DEGENS is here to bridge the gap between communities and bring us together. Our mission is to create a coin that reflects the values and aspirations of the people who make up this space. 
+      Join us and be a part of something special.</h4>
+    <div class="two-columns">
+      <div class="left-column">
+        <div class="centered-rectangular-image" style="background-image: url(pepe.png);"></div>
+      </div>
+           <div class="right-column">
+        <h3>Once a DEGEN, always a DEGEN</h3>
+        <h5>As degens, we deserve a memecoin that truly represents who we are. We understand the importance of having a coin that reflects our unique identity and values. 
+          That's why we're proud to offer a coin that is created by and for degens. Our logo pays homage to the original degens on 4chan /biz, who paved the way for us to embrace our degeneracy with pride. 
+          Join us and let's celebrate our degeneracy together!</h5>
+        <a href="https://boards.4channel.org/biz/" class="button">Origins</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section two -->
+  <section id="section-two">
+    <div class="two-columns">
+      <div class="left-column">
+	  <h3>Don't Listen to Them</h3>
+        <h6>Wagies are going to tell you to go to bed. We as a community are here to tell you that is a load of shit. Max gains happen when wagies are sleeping.</h6>
+        <a href="https://twitter.com/jimcramer" class="button">NGMI</a>
+      </div>
+      <div class="right-column">
+        <div class="centered-rectangular-image" style="background-image: url(wagies.jpg);"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section three -->
+  <section id="section-three">
+    <div class="two-columns">
+      <div class="left-column">
+        <div class="centered-rectangular-image" style="background-image: url(greendildo.png);"></div>
+      </div>
+      <div class="right-column">
+        <h3>The Future of DEGENS</h3>
+        <h5>The goal with $DEGENS is to create a decentralized metaverse that spans across all dimensions of reality, connecting degens from every corner of the universe. 
+          We're also aiming to achieve a market cap of $1 trillion by the end of next week. Ambitious? Maybe. But we're degens – we thrive on impossible challenges.</h5>
+        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cnbc.com%2F2020%2F01%2F31%2Fapple-amazon-microsoft-and-alphabet-and-the-road-to-1-trillion.html&psig=AOvVaw1e1RzU-mbVJCpNC5HMQJnv&ust=1683028001650000&source=images&cd=vfe&ved=0CBMQjhxqFwoTCJjI9YOG1P4CFQAAAAAdAAAAABAE" target="_blank" class="button">1 Trillion Club</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section four -->
+  <section id="section-four">
+    <div class="two-columns">
+      <div class="left-column">
+	  <h3>For the Memes</h3>
+        <h6>We believe that life is too short to take too seriously. We're here to have fun, make new memes, and build a community that embraces our degeneracy with pride. 
+          While the world around us may be decaying, we choose to focus on the positive and find joy in the moment. Join us and let's make the most of the time we have together as degens."</h6>
+        <a href="https://www.decisionproblem.com/paperclips/" class="button">Click It, I Dare You</a>
+      </div>
+      <div class="right-column">
+        <div class="centered-rectangular-image" style="background-image: url(forthememes.jpg);"></div>
+      </div>
+    </div>
+  </section>
+
+
+      <!-- Section five -->
+      <section id="section-five">
+        <h3>Buy $DEGENS</h3>
+        <div class="one-column">
+            <br>
+            <iframe
+            src="https://app.uniswap.org/#/swap?exactField=input&exactAmount=2&inputCurrency=ETH&outputCurrency=0x082BA43d44F684D5302bA2c311c807a6bD0a265c"
+            height="660px"
+            width="100%"
+            style="
+              border: 0;
+              margin: 0 auto;
+              margin-bottom: .5rem;
+              display: block;
+              border-radius: 10px;
+              max-width: 960px;
+              min-width: 300px;
+            "
+          />
+        </div>
+      </section>
+
+
+
+    <!-- Section six -->
+    <section id="section-six">
+      <div class="two-columns">
+        <div class="left-column">
+          <div class="centered-rectangular-image" style="background-image: url(Tokenomics.jpg);"></div>
+        </div>
+        <div class="right-column">
+          <h3>$DEGENS Tokenomics</h3>
+          <h5>We all know the true Degens at heart don't care about the tokenomics, who really has time for DYOR when FOMO kicks in?! We wanted to make the tokenomics easy to understand, which means more time for aping. 
+            <br>
+            <br>
+            It's simple:
+            <br>
+            <br>
+            - 96% of the total supply of $DEGENS was added to the Ethereum Uniswap V3 pool.
+            <br>
+            <br>
+            - The LP tokens have been locked up for 3 months (to start) in the <a href="https://www.team.finance/view-coin/0x082BA43d44F684D5302bA2c311c807a6bD0a265c" target="_blank">Trustswap locker</a>
+            <br>
+            <br>
+            - No more tokens can ever be minted (code is law, right?!). 
+            <br>
+            <br>
+            - The deployer address has no ownership of the token contract what so ever.
+            <br>
+            <br>
+            Which means you can sleep easier (but who has time for that) knowing your funds are SAFU!
+          </h5>
+          <a href="https://etherscan.io/tx/0xf97022469ce03e69ec844cd552d5be02cecd864e36ac16805d95f6dde6215e15" target="_blank" class="button">LP Lock TX</a>
+        </div>
+      </div>
+    </section>
+
+
+  <!-- Footer section -->
+  <footer>
+    <div class="centered-copyright">
+      <p>&copy; 2023 Degens Club. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Add your JavaScript code here -->
+</body>
+</html>
+```
+
