@@ -44,6 +44,7 @@
       text-align: center;
     }
 
+
     h1 {
       font-size: 40px;
       font-weight: bold;
@@ -79,8 +80,11 @@
     }
 
     .hero-image {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
       height: 100%;
-      width: 100%;
+      width: auto;
     }
 
     .centered-square-image {
@@ -144,7 +148,7 @@
       background-size: contain;
       height: 300px;
       margin: 0 auto;
-      width: 400px;
+      width: auto;
     }
 
     .right-column h3 {
@@ -226,18 +230,48 @@
     }
 
     /* Section five styles */
-    #section-five {
+    #tokenomics {
       background-color: #fff;
       padding: 60px 0;
       text-align: center;
     }
 
-    #section-five h3 {
+    #tokenomics h3 {
       font-size: 30px;
       font-weight: bold;
       margin-bottom: 40px;
       text-transform: uppercase;
     }
+
+    /* Section six styles */
+    #buy {
+      background-color: #f8f8f8;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    #buy h3 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+
+    /* Section seven styles */
+    #contractAddress {
+      background-color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    #contractAddress h3 {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+
+
 	  h4 {
       font-size: 18px;
       margin-bottom: 40px;
@@ -282,11 +316,11 @@
     <!-- Navigation bar -->
     <nav>
       <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">CHART</a></li>
-        <li><a href="#">BUY DEGENS</a></li>
-        <li><a href="#">TWITTER</a></li>
-        <li><a href="#">TELEGRAM</a></li>
+        <li><a href="https://www.dextools.io/app/en/ether/pair-explorer/0x7dae3d07a1b3d4994ef71dfd08b0dde9d15db202" target="_blank">CHART</a></li>
+        <li><a href="https://etherscan.io/token/0x082ba43d44f684d5302ba2c311c807a6bd0a265c" target="_blank">CONTRACT</a></li>
+        <li><a href="#buy">BUY DEGENS</a></li>
+        <li><a href="https://twitter.com/degenstoken/" target="_blank">TWITTER</a></li>
+        <li><a href="https://t.me/DeGeNsOfficial" target="_blank">TELEGRAM</a></li>
       </ul>
     </nav>
   </header>
@@ -311,7 +345,7 @@
         <h5>As degens, we deserve a memecoin that truly represents who we are. We understand the importance of having a coin that reflects our unique identity and values. 
           That's why we're proud to offer a coin that is created by and for degens. Our logo pays homage to the original degens on 4chan /biz, who paved the way for us to embrace our degeneracy with pride. 
           Join us and let's celebrate our degeneracy together!</h5>
-        <a href="https://boards.4channel.org/biz/" class="button">Origins</a>
+        <a href="https://boards.4channel.org/biz/" target="_blank" class="button">Origins</a>
       </div>
     </div>
   </section>
@@ -322,7 +356,7 @@
       <div class="left-column">
 	  <h3>Don't Listen to Them</h3>
         <h6>Wagies are going to tell you to go to bed. We as a community are here to tell you that is a load of shit. Max gains happen when wagies are sleeping.</h6>
-        <a href="https://twitter.com/jimcramer" class="button">NGMI</a>
+        <a href="https://twitter.com/jimcramer" target="_blank" class="button">NGMI</a>
       </div>
       <div class="right-column">
         <div class="centered-rectangular-image" style="background-image: url(wagies.jpg);"></div>
@@ -352,7 +386,7 @@
 	  <h3>For the Memes</h3>
         <h6>We believe that life is too short to take too seriously. We're here to have fun, make new memes, and build a community that embraces our degeneracy with pride. 
           While the world around us may be decaying, we choose to focus on the positive and find joy in the moment. Join us and let's make the most of the time we have together as degens."</h6>
-        <a href="https://www.decisionproblem.com/paperclips/" class="button">Click It, I Dare You</a>
+        <a href="https://www.decisionproblem.com/paperclips/" target="_blank" class="button">Click It, I Dare You</a>
       </div>
       <div class="right-column">
         <div class="centered-rectangular-image" style="background-image: url(forthememes.jpg);"></div>
@@ -363,17 +397,20 @@
 
 
     <!-- Section five -->
-    <section id="section-five">
+    <section id="tokenomics">
       <div class="two-columns">
         <div class="left-column">
           <div class="centered-rectangular-image" style="background-image: url(Tokenomics.jpg);"></div>
         </div>
         <div class="right-column">
-          <h3>$DEGENS Tokenomics</h3>
+          <h3>$DEGENS Tokenomics (No Lame Taxes!)</h3>
           <h5>We all know the true Degens at heart don't care about the tokenomics, who really has time for DYOR when FOMO kicks in?! We wanted to make the tokenomics easy to understand, which means more time for aping. 
             <br>
             <br>
             It's simple:
+            <br>
+            <br>
+            - Max Total Supply: 888,888,888,888,888 
             <br>
             <br>
             - 96% of the total supply of $DEGENS was added to the Ethereum Uniswap V3 pool.
@@ -397,7 +434,8 @@
 
 
     <!-- Section six -->
-    <section id="section-six">
+    <section id="buy">
+      <h3>Buy $DEGENS</h3>
           <iframe
           src="https://app.uniswap.org/#/swap?exactField=input&exactAmount=2&inputCurrency=ETH&outputCurrency=0x082BA43d44F684D5302bA2c311c807a6bD0a265c"
           height="660px"
@@ -415,10 +453,27 @@
 
     </section>
 
+    <!-- Section seven -->
+    <section id="contractAddress">
+      <div class="two-columns">
+        <div class="left-column">
+          <div class="centered-rectangular-image" style="background-image: url(logo700.png);"></div>
+        </div>
+        <div class="right-column">
+          <h3>$DEGENS Contract Address</h3>
+          <h5>0x082BA43d44F684D5302bA2c311c807a6bD0a265c</h5>
+          <a href="https://etherscan.io/token/0x082ba43d44f684d5302ba2c311c807a6bd0a265c" target="_blank" class="button">Etherscan</a>
+        </div>
+      </div>
+    </section>
 
   <!-- Footer section -->
   <footer>
     <div class="centered-copyright">
+      <h7>$DEGENS is a meme coin with no intrinsic value or expectation of financial return. There is no formal team or roadmap. 
+        The coin is completely useless and for entertainment purposes only.</h7>
+        <br>
+        <br>
       <p>&copy; 2023 Degens Club. All rights reserved.</p>
     </div>
   </footer>
